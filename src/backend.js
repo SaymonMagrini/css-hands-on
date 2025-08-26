@@ -21,3 +21,14 @@ function goUp() {
 }
 
 butao = document.getElementById('botao').addEventListener('click', goUp);
+
+const tooltip = document.getElementById('tooltip');
+
+function showTooltip() {
+    tooltip.classList.add('show');
+    setTimeout(() => {
+        tooltip.classList.remove('show');
+    }, 5000);
+}
+
+window.addEventListener('load', showTooltip);
