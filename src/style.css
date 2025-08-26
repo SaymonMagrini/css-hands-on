@@ -1,11 +1,62 @@
-body{
+body {
 
     /* Body theme */
     font-family: Arial, sans-serif;
     background-color: #000000;
     color: #00ee69;
 
-    #cabeças{
+    .logo-marca {
+        width: 50px;
+        height: auto;
+        margin: 3px;
+        margin-left: 7px;
+        border: 2px solid #00ffff;
+        border-radius: 8px;
+
+    }
+
+    .cabeçalho {
+        display: flex;
+        font-size: 12pt;
+        color: #00ffff;
+        margin-bottom: 15px;
+        background-color: #9500ff;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cItem {
+        font-weight: 700;
+        text-decoration: none;
+        color: #00ffff;
+        padding: 15px;
+        border: 2px solid #00ffff;
+        margin: 5pt;
+        border-radius: 8px;
+    }
+
+    #cabeças {
+        position: relative;
         margin: 20px;
     }
- }
+
+    .botao {
+        position: fixed;
+        background-color: #9500ff;
+        color: #00ffff;
+        bottom: 20px;
+        right: 20px;
+        font-weight: bold;
+        font-size: medium;
+        border-radius: 25px;
+        border: none;
+        padding: 14px 22px;
+        z-index: 1000;
+        align-items: center;
+    }
+
+    .botao:hover {
+        transform: scale(1.05);
+    }
+
+}
