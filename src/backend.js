@@ -1,5 +1,5 @@
 // stating variables for the heads
-let app = document.getElementById('cabeças');
+const app = document.getElementById('cabeças');
 let count = 0;
 
 function loopcount() {
@@ -7,6 +7,7 @@ function loopcount() {
         //console.log(`counter is: ${count}`);
         let h1 = document.createElement('h1');
         h1.textContent = `cabeça ${count}`;
+        h1.id = `c${count}`;
         app.appendChild(h1);
     }
 }
