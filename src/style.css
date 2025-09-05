@@ -26,6 +26,17 @@ body {
     align-items: center;
 }
 
+.secundário {
+    position: sticky;
+    top: 3%;
+    align-self: start;
+    background: #ff0000;
+    color: #ffffff;
+    border: none;
+    z-index: 501;
+    padding: 0.3px;
+}
+
 .cItem {
     font-weight: 700;
     text-decoration: none;
