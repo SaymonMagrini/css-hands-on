@@ -44,13 +44,12 @@ body {
 
     .flex-item {
         margin: 10px 0;
-        /* Espaçamento entre os itens */
         width: 100%;
-        /* Itens ocupam a largura total */
     }
 }
 
 /*estilização não muito relevante pra atividade mas que já tava pronta*/
+
 .hidden {
     display: none;
 }
@@ -64,7 +63,6 @@ body {
     animation: misterio 2s infinite ease-in-out;
 }
 
-/*animação misteriosa*/
 @keyframes misterio {
 
     0%,
