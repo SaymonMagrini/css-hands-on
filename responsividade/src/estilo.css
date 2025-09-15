@@ -7,84 +7,9 @@ body {
 
 }
 
+/*estilização não muito relevante pra atividade mas que já tava pronta*/
 .hidden {
     display: none;
-}
-
-.logo-marca {
-    width: 50px;
-    height: auto;
-    margin: 3px;
-    margin-left: 7px;
-    border: 2px solid #00ffff;
-    border-radius: 8px;
-
-}
-
-.cabeçalho {
-    display: flex;
-    font-size: 12pt;
-    color: #00ffff;
-    margin-bottom: 15px;
-    background-color: #9500ff;
-    background-image: linear-gradient(#9500ff, #430099);
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    width: 100%;
-}
-
-.rodapé {
-    display: flex;
-    font-size: 12pt;
-    color: #00ffff;
-    margin-bottom: 15px;
-    background-color: #9500ff;
-    background-image: linear-gradient(#9500ff, #430099);
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.botaozao {
-    display: absolute;
-    width: 300px;
-    color: #000000;
-    font-size: 20pt;
-    font-weight: bold;
-    border-radius: 10px;
-    border: 2px solid #000000;
-    cursor: default;
-}
-
-.artigo {
-    display: block;
-    width: fit-content;
-    padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 10%;
-    background-color: #2d2d2d;
-}
-
-.cItem {
-    font-weight: 700;
-    text-decoration: none;
-    color: #00ffff;
-    padding: 15px;
-    border: 2px solid #00ffff;
-    margin: 5pt;
-    border-radius: 8px;
-}
-
-.image {
-    width: 20%;
-    height: auto;
-    padding: 0.5%;
-    margin: .15%;
-    border: 2px solid #00FFFF;
 }
 
 .interrogação {
@@ -94,15 +19,6 @@ body {
     right: 20px;
     width: 80px;
     animation: misterio 2s infinite ease-in-out;
-}
-
-.segredinho {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    color: rgba(255, 255, 255, 0.3);
-    animation: misterio 2s infinite ease-in-out;
-    text-decoration: none;
 }
 
 /*animação misteriosa*/
@@ -139,6 +55,8 @@ body {
     pointer-events: auto;
 }
 
+/*estilização da segunda demanda da atividade*/
+
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -159,59 +77,16 @@ body {
     font-weight: bold;
 }
 
-.tables {
-    border: #9500ff;
-    border-style: double;
-    border-collapse: collapse;
-    width: 25%;
-    background-color: #1a1a1a;
-}
+/* estilização da terceira demanda da atividade */
 
-.tbh {
-    border: 1px solid #9500ff;
-    padding: 0.5%;
-    text-align: center;
-}
-
-.tbhc {
-    border: 1px solid #ff00ff;
-    padding: 0.5%;
-    text-align: center;
-    background-color: #080808;
-}
-
-
-/*text color classes*/
-
-.redt {
-    color: #ff0000;
-}
-
-.purplet {
-    color: #9500ff;
-}
-
-.greent {
-    color: #00ff00;
-}
-
-.yellowt {
-    color: #ffff00
-}
-
-/* background color classes */
-
-.redb {
-    background-color: #ff0000;
-    width: fit-content;
-}
-
-.purpleb {
-    background-color: #9500ff;
-    width: fit-content;
-}
-
-.greenb {
-    background-color: #00ff00;
-    width: fit-content;
+@media screen and (max-width: 768px) { /* Para telas de 768px ou menos */
+  .flex-container {
+    flex-direction: column; /* Itens em coluna para mobile */
+    justify-content: center;
+    align-items: stretch; /* Ocupa a largura total */
+      }
+    .flex-item {
+        margin: 10px 0; /* Espaçamento entre os itens */
+        width: 100%; /* Itens ocupam a largura total */
+        }
 }
