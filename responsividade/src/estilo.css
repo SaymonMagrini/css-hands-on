@@ -7,6 +7,49 @@ body {
 
 }
 
+/*estilização da segunda demanda da atividade*/
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    background-color: #111111;
+}
+
+.flex-item {
+    width: 60px;
+    height: 60px;
+    background-color: #430099;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* estilização da terceira demanda da atividade */
+
+@media screen and (max-width: 768px) {
+
+    /* Para telas de 768px ou menos */
+    .flex-container {
+        flex-direction: column;
+        /* Itens em coluna para mobile */
+        justify-content: center;
+        align-items: stretch;
+        /* Ocupa a largura total */
+    }
+
+    .flex-item {
+        margin: 10px 0;
+        /* Espaçamento entre os itens */
+        width: 100%;
+        /* Itens ocupam a largura total */
+    }
+}
+
 /*estilização não muito relevante pra atividade mas que já tava pronta*/
 .hidden {
     display: none;
@@ -36,6 +79,7 @@ body {
 
 #tooltip {
     position: absolute;
+    text-align: center;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -53,40 +97,4 @@ body {
 #tooltip.show {
     opacity: 1;
     pointer-events: auto;
-}
-
-/*estilização da segunda demanda da atividade*/
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 150px;
-    background-color: #111111;
-}
-
-.flex-item {
-    width: 60px;
-    height: 60px;
-    background-color: #430099;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-}
-
-/* estilização da terceira demanda da atividade */
-
-@media screen and (max-width: 768px) { /* Para telas de 768px ou menos */
-  .flex-container {
-    flex-direction: column; /* Itens em coluna para mobile */
-    justify-content: center;
-    align-items: stretch; /* Ocupa a largura total */
-      }
-    .flex-item {
-        margin: 10px 0; /* Espaçamento entre os itens */
-        width: 100%; /* Itens ocupam a largura total */
-        }
 }
